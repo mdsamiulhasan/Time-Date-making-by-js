@@ -1,0 +1,178 @@
+
+
+//Es6 version programming start now:
+
+const today = new Date();
+const day = today.getDay()
+const daylist = ["sunday", "monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+document.write(`Today is:  ${daylist[day]}. `)
+
+document.write(`<br/>`)
+document.write(`<br/>`)
+                         //Variable declaration
+let hour = today.getHours()
+const miniute = today.getMinutes()
+const second = today.getSeconds()
+const millisecond = today.getMilliseconds()
+
+let prepand = (hour >= 12)? " PM " : " AM "
+hour = (hour >= 12)? hour-12 : hour
+                        //Looping start Now:
+if(hour===0 && prepand=== " PM "){
+    if(miniute===0 && second===0){
+        hour = 12
+        prepand = ' Noon'
+    }else{
+        hour=12
+        prepand= 'PM'
+    }
+}
+
+if(hour===0 && prepand=== ' AM'){
+    if(miniute===0 && second===0){
+        hour=12
+        prepand= 'Midnight'
+    }else{
+        hour=12
+        prepand=' AM'
+    }
+}
+
+                        // initilaization Now:
+document.write(`The Current Time is: ${hour}${prepand}: ${miniute} : ${second} : ${millisecond} .  `)
+
+
+
+
+
+
+
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+
+// var a=5;
+// var b = 5;
+// var c = a + b;
+// document.write(c)
+// dater writting
+
+// var today = new Date()
+// var day = today.getDay()
+
+
+// var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+// document.write("Today is : " + daylist[day] + ".")
+// console.log(" . " )
+
+// Today time out
+
+// var hour = today.getHours();
+// var miniute = today.getMinutes()
+// var seconds = today.getSeconds()
+
+// var prepand = (hour >= 12)? " PM " : " AM"
+// hour = (hour >= 12)? hour -12: hour;
+// if(hour===0 && prepand=== ' PM '){
+//     if(miniute===0 && seconds===0){
+//         hour=12
+//         prepand = ' PM '
+//     }
+// }
+
+// //Nested Loop
+
+// if(miniute===0 && seconds===0){
+// hour=12
+// prepand=' Noon '
+
+
+// }else{
+//     hour=12
+//     prepand=' PM '
+// }
+
+// //LOOP REAGAIN
+// if(hour===0 && prepand=== ' AM '){
+// if(miniute===0 && seconds===0){
+//     hour = 12
+//     prepand= ' MidNight '
+// }else{
+//     hour=12
+//     prepand = ' AM '
+// }
+// }
+// document.write("Current Time is: " + hour + prepand + " : " +miniute + "  : " + seconds + " . ")
+
+
+//Programming Solving About Today Date and Time:
+
+
+
+// var today = new Date()
+// var day = today.getDay()
+// var daylist=['sunday', 'monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+// document.write("Today is : " + daylist[day])
+
+// document.write("<br/>")
+// document.write("<br/>")
+
+
+// //Now getting time
+
+// var hour = today.getHours()
+// var miniute = today.getMinutes()
+// var second = today.getSeconds()
+
+// var prepand = (hour >= 12)? " PM " : " AM "
+
+// var hour = (hour >= 12)? hour-12 : hour
+
+
+// //starting loop Now:
+
+// if(hour===0 && prepand=== ' PM '){
+
+//     //Nesting Loop start Now:
+
+//     if(miniute===0 && second===0){
+//         hour = 12
+//         prepand = ' PM '
+//     }
+// }
+
+// //second loop starting Now:
+
+// if(miniute===0 && second===0){
+//     hour = 12
+//     prepand = 'Noon'
+
+// }else{
+//     hour = 12
+//     prepand = ' PM '
+// }
+
+
+
+// //Third Loop starting Now:
+
+// if(hour===0 && prepand===' AM '){
+//     if(miniute===0 && second===0){
+//         hour = 12
+//         prepand = 'Midnight'
+//     }else{
+//         hour = 12
+//         prepand = ' AM '
+//     }
+// }
+
+// //NOW We will see these output:
+
+// document.write("Current Time Is : " + hour + " : " + prepand + " : " + miniute + " : " + second + " : " + " . ")
+
+
+
